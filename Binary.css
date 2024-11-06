@@ -1,0 +1,62 @@
+/* Global page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets font for the entire page */
+    background: linear-gradient(to right, #74ebd5, #acb6e5); /* Sets gradient background for the page */
+    color: #333; /* Base text color for the entire page */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Enables flexbox model to center content */
+    justify-content: center; /* Horizontally centers content within flex container */
+    align-items: center; /* Vertically centers content within flex container */
+    height: 100vh; /* Sets page height to match 100% of the viewport height */
+}
+
+/* Styling for the main container holding the form */
+#converter {
+    background: white; /* White background color */
+    padding: 40px; /* Padding inside the container for spacing from edges */
+    border-radius: 10px; /* Rounds container corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+    width: 100%; /* Container takes full width of its parent */
+    max-width: 400px; /* Limits maximum width to 400px */
+}
+
+/* Styling for the input field for number entry */
+#decimalInput {
+    width: 100%; /* Input field occupies full width of the container */
+    padding: 10px; /* Padding inside the field for comfortable typing */
+    margin-top: 8px; /* Top margin */
+    margin-bottom: 20px; /* Bottom margin */
+    border-radius: 5px; /* Slight rounding of input field corners */
+    border: 1px solid #ddd; /* Thin gray border */
+    box-sizing: border-box; /* Includes border and padding within element’s width and height */
+}
+
+/* Styling for the conversion button */
+#convertButton {
+    width: 100%; /* Button occupies full available width */
+    padding: 10px; /* Padding to increase button size */
+    border-radius: 5px; /* Rounded corners on the button */
+    border: none; /* Removes border */
+    background-image: linear-gradient(to right, #56ab2f, #a8e063); /* Gradient background for button */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text for emphasis */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow under button for lift effect */
+    transition: background-image 0.3s ease-in-out; /* Smooth animation for gradient change on hover */
+}
+
+/* Hover effect for the button */
+#convertButton:hover {
+    background-image: linear-gradient(to right, #a8e063, #56ab2f); /* Changes gradient on hover */
+}
+
+/* Styling for the result display */
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f7f7f7; /* Light gray background */
+    border-radius: 5px; /* Slight rounding of corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth effect */
+    word-break: break-all; /* Breaks long binary output text */
+}
